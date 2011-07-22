@@ -2,9 +2,9 @@ require 'rake_ext'
 
 project(
   name: "mongo_mapper_ext",
-  version: "0.2.4",
   summary: "Extensions for MongoMapper",
+  gem: true,
 
   author: "Alexey Petrushin",
-  homepage: "http://github.com/alexeypetrushin/mongo_mapper"
+  homepage: "http://github.com/alexeypetrushin/mongo_mapper_ext"
 )
