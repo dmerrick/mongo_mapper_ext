@@ -1,7 +1,7 @@
 # dependencies for core gems
 gem 'i18n', '>= 0.5.0'
-gem 'activesupport', '>= 3.0.7'
-gem 'activemodel', '>= 3.0.7'
+gem 'activesupport', '>= 3.0.4'
+gem 'activemodel', '>= 3.0.4'
 gem 'bson', '>= 1.3.0'
 gem 'bson_ext', '>= 1.3.0'
 gem 'mongo', '>= 1.3.0'
