@@ -7,7 +7,7 @@ gem 'bson_ext', '>= 1.3.0'
 gem 'mongo', '>= 1.3.0'
 gem 'plucky', '>= 0.3.6'
 
-gem 'mini_magick',   '>= 3.2.1'
+gem 'mini_magick',   '>= 3.2.0'
 gem 'subexec',       '>= 0.0.4'
 
 # core gems
