@@ -88,7 +88,9 @@ module MongoMapper::Migration
 
       puts "in MigrationDefinition#definitions"
 
-      @definitions ||= Hash.new{|h, k| h[k] = []} 
+      @definitions ||= Hash.new{|h, k| h[k] = []}
+      puts "exiting MigrationDefinition#definitions"
+      @definitions
     end
     
     protected
