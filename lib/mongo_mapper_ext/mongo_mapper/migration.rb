@@ -53,6 +53,9 @@ module MongoMapper::Migration
       raise "version should be an Integer! (but you provided '#{version}' instad)!" unless version.is_a? Integer
       definition = MigrationDefinition.new
       block.call definition
+      
+      puts "exiting MigrationDefinition#define"
+      
       definitions[database_alias][version] = definition
     end
             
