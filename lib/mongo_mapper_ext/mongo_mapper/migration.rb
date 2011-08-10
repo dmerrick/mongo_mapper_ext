@@ -1,6 +1,9 @@
 module MongoMapper::Migration
   class MigrationDefinition
     def upgrade &block
+
+      puts "in MigrationDefinition#up/upgrade"
+
       if block
         @upgrade = block
       else
@@ -10,6 +13,9 @@ module MongoMapper::Migration
     alias_method :up, :upgrade
     
     def downgrade &block
+
+      puts "in MigrationDefinition#down/downgrade"
+
       if block
         @downgrade = block
       else
@@ -39,6 +45,9 @@ module MongoMapper::Migration
     def logger; @logger ||= Logger.new end
     
     def define database_alias, version, &block
+
+      puts "in MigrationDefinition#define"
+
       database_alias = database_alias.to_s
       
       raise "version should be an Integer! (but you provided '#{version}' instad)!" unless version.is_a? Integer
